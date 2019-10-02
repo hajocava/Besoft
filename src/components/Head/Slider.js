@@ -21,7 +21,6 @@ export default class Carousel extends Component {
             autoplay: true,
             autoplaySpeed: 3000,
             cssEase: 'linear',
-            beforeChange: current => this.setState({ slideIndex: current }),
             afterChange: current => this.setState({ slideIndex: current })
         }
 
