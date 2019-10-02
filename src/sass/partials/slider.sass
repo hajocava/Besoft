@@ -1,17 +1,51 @@
 .slider
     padding-top: 100px
-    height: calc(100vh - 100px)
+    height: 100vh
     .buttons
         .button
             height: 50px
             width: 50px
-            background-color: $claro
+            background-color: $gris1
             display: flex
             justify-content: center
             align-items: center
             font-size: 1rem
-            color: $grisoscuro
+            color: $gris3
             cursor: pointer
+            &:hover
+                background-color: $gris2
             &.active
-                background-color: $gris
+                background-color: $gris2
                 color: $primary
+    .imagen
+        height: calc(100vh - 150px)
+        background-image: url('../img/hero.jpg')
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .filtro 
+            position: absolute;
+            height: 100%;
+            width: 100%;
+
+            background: rgba(0,0,0,0.25);
+            background: -moz-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.25)), color-stop(100%, rgba(0,0,0,0.25)));
+            background: -webkit-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            background: -o-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            background: -ms-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+        .container
+            height: 100%
+            .row
+                height: 100%
+                color: $white
+                span
+                    display: block
+                
+                @include large
+                    span
+                        display: inline
+                

@@ -7,7 +7,12 @@ export default function Carousel() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: 'linear'
     };
     return (
         <div className="slider">
@@ -25,18 +30,19 @@ export default function Carousel() {
                     <i class="la la-paint-brush"></i>
                 </div>
             </div>
-            <Slider {...settings}>
-                <div>
-                    <h3>1</h3>
-                </div>
-                <div>
-                    <h3>2</h3>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
+            <Slider {...settings} >
+                <div className="imagen">
+                    <div className="filtro">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col">
+                                    <h1>Web & Mobile <span>Development</span></h1>
+                                    <p className="mt-2">Applications for all devices and user experience</p>
+                                    <button className="btn transparent white mt-5">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Slider>
         </div>

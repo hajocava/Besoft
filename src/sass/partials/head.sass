@@ -1,11 +1,15 @@
 header
-    background-color: $claro
+    background-color: $gris1
 
 nav
-    background-color: $claro
-    position: absolute
+    background-color: $gris1
+    position: fixed
     top: 0
     width: 100%
+    z-index: 1000
+    // -webkit-box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
+    // -moz-box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
+    // box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
     ul
         height: 70px
         margin: 0
@@ -13,7 +17,7 @@ nav
         li
             list-style: none
             cursor: pointer
-            color: $grisoscuro
+            color: $gris3
     .movil
         height: 70px
         .icono-menu
@@ -46,7 +50,7 @@ nav
         right: 0
         width: 50%
         height: calc(100vh - 70px)
-        background-color: $claro
+        background-color: $gris1
         ul
             transform: translateY(-70px)
             li
