@@ -1,90 +1,104 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Slider from 'react-slick'
 
-export default function Carousel() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        cssEase: 'linear'
+export default class Carousel extends Component {
+
+    state = {
+        slideIndex: 0
     }
-    
-    return (
-        <div className="slider">
-            <div className="container buttons d-flex">
-                <div className="button active">
-                    <i class="la la-code"></i>
+
+    render() {
+
+
+        const settings = {
+            dots: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            cssEase: 'linear'
+        }
+
+        const goToSlide = slide => () => {
+            this.setState({ slideIndex: slide})
+            this.slider.slickGoTo(slide)
+        }
+
+        return (
+            <div className="slider">
+                <div className="container buttons d-flex">
+                    <div className={`button ${this.state.slideIndex === 0 ? 'active' : ''}`} onClick={goToSlide(0)} >
+                        <i class="la la-code"></i>
+                    </div>
+                    <div className={`button ${this.state.slideIndex === 1 ? 'active' : ''}`} onClick={goToSlide(1)} >
+                        <i class="la la-mobile-phone"></i>
+                    </div>
+                    <div className={`button ${this.state.slideIndex === 2 ? 'active' : ''}`} onClick={goToSlide(2)} >
+                        <i class="la la-briefcase"></i>
+                    </div>
+                    <div className={`button ${this.state.slideIndex === 3 ? 'active' : ''}`} onClick={goToSlide(3)} >
+                        <i class="la la-paint-brush"></i>
+                    </div>
                 </div>
-                <div className="button">
-                    <i class="la la-mobile-phone"></i>
-                </div>
-                <div className="button">
-                    <i class="la la-briefcase"></i>
-                </div>
-                <div className="button">
-                    <i class="la la-paint-brush"></i>
-                </div>
+                <Slider ref={slider => (this.slider = slider)} {...settings} >
+                    <div className="imagen uno">
+                        <div className="filtro">
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col">
+                                        <h1>Web & Mobile <span>Development</span></h1>
+                                        <p className="mt-2">Applications for all devices and user experience</p>
+                                        <button className="btn transparent white mt-5">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="imagen dos">
+                        <div className="filtro">
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col align-self-center text-center">
+                                        <h1>Interfaces Design</h1>
+                                        <p className="mt-2">Applications for all devices and user experience</p>
+                                        <button className="btn transparent white mt-5">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="imagen tres">
+                        <div className="filtro">
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col">
+                                        <h1>User Experience</h1>
+                                        <p className="mt-2">Applications for all devices and user experience</p>
+                                        <button className="btn transparent white mt-5">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="imagen cuatro">
+                        <div className="filtro">
+                            <div className="container">
+                                <div className="row align-items-center">
+                                    <div className="col">
+                                        <h1>Business Software</h1>
+                                        <p className="mt-2">Applications for all devices and user experience</p>
+                                        <button className="btn transparent white mt-5">Contact Us</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Slider>
             </div>
-            <Slider {...settings} >
-                <div className="imagen uno">
-                    <div className="filtro">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col">
-                                    <h1>Web & Mobile <span>Development</span></h1>
-                                    <p className="mt-2">Applications for all devices and user experience</p>
-                                    <button className="btn transparent white mt-5">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="imagen dos">
-                    <div className="filtro">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col align-self-center text-center">
-                                    <h1>Interfaces Design</h1>
-                                    <p className="mt-2">Applications for all devices and user experience</p>
-                                    <button className="btn transparent white mt-5">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="imagen tres">
-                    <div className="filtro">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col">
-                                    <h1>User Experience</h1>
-                                    <p className="mt-2">Applications for all devices and user experience</p>
-                                    <button className="btn transparent white mt-5">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="imagen cuatro">
-                    <div className="filtro">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col">
-                                    <h1>Business Software</h1>
-                                    <p className="mt-2">Applications for all devices and user experience</p>
-                                    <button className="btn transparent white mt-5">Contact Us</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Slider>
-        </div>
-    );
+        );
+    }
 }
