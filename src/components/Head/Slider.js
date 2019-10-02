@@ -20,7 +20,9 @@ export default class Carousel extends Component {
             fade: true,
             autoplay: true,
             autoplaySpeed: 3000,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            beforeChange: current => this.setState({ slideIndex: current }),
+            afterChange: current => this.setState({ slideIndex: current })
         }
 
         const goToSlide = slide => () => {
