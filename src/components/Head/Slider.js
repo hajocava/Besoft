@@ -34,16 +34,16 @@ export default class Carousel extends Component {
             <div className="slider">
                 <div className="container buttons d-flex">
                     <div className={`button ${this.state.slideIndex === 0 ? 'active' : ''}`} onClick={goToSlide(0)} >
-                        <i class="la la-code"></i>
+                        <i className="la la-code"></i>
                     </div>
                     <div className={`button ${this.state.slideIndex === 1 ? 'active' : ''}`} onClick={goToSlide(1)} >
-                        <i class="la la-mobile-phone"></i>
+                        <i className="la la-mobile-phone"></i>
                     </div>
                     <div className={`button ${this.state.slideIndex === 2 ? 'active' : ''}`} onClick={goToSlide(2)} >
-                        <i class="la la-briefcase"></i>
+                        <i className="la la-briefcase"></i>
                     </div>
                     <div className={`button ${this.state.slideIndex === 3 ? 'active' : ''}`} onClick={goToSlide(3)} >
-                        <i class="la la-paint-brush"></i>
+                        <i className="la la-paint-brush"></i>
                     </div>
                 </div>
                 <Slider ref={slider => (this.slider = slider)} {...settings} >
