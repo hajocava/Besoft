@@ -26,23 +26,32 @@
             outline: none;
         &.uno
             background-image: url('../img/hero.jpg')
-            background-position: center;
+            background-position: 70% 0
+            @include medium
+                background-position: center
         &.dos
+            background-image: url('../img/hero2.jpg')
+            background-position: top center
+            text-align: center
+        &.tres
             background-image: url('../img/hero3.jpg')
+            background-position: center
+        &.cuatro
+            background-image: url('../img/hero4.jpg')
             background-position: center right
         .filtro 
             position: absolute;
             height: 100%;
             width: 100%;
-
-            background: rgba(0,0,0,0.25);
-            background: -moz-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
-            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.25)), color-stop(100%, rgba(0,0,0,0.25)));
-            background: -webkit-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
-            background: -o-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
-            background: -ms-linear-gradient(left, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
-            background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+            background: rgba(0,0,0,0.3);
+            background: -moz-linear-gradient(left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.3)), color-stop(100%, rgba(0,0,0,0.3)));
+            background: -webkit-linear-gradient(left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+            background: -o-linear-gradient(left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+            background: -ms-linear-gradient(left, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+            background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+        
         .container
             height: 100%
             .row
@@ -50,7 +59,6 @@
                 color: $white
                 span
                     display: block
-                
                 @include large
                     span
                         display: inline

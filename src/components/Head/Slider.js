@@ -50,7 +50,33 @@ export default function Carousel() {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col">
-                                    <h1>User Experience <span>Design</span></h1>
+                                    <h1>Interfaces Design</h1>
+                                    <p className="mt-2">Applications for all devices and user experience</p>
+                                    <button className="btn transparent white mt-5">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="imagen tres">
+                    <div className="filtro">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col">
+                                    <h1>User Experience</h1>
+                                    <p className="mt-2">Applications for all devices and user experience</p>
+                                    <button className="btn transparent white mt-5">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="imagen cuatro">
+                    <div className="filtro">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col">
+                                    <h1>Business Software</h1>
                                     <p className="mt-2">Applications for all devices and user experience</p>
                                     <button className="btn transparent white mt-5">Contact Us</button>
                                 </div>
