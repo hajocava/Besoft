@@ -13,7 +13,8 @@ export default function Carousel() {
         autoplay: true,
         autoplaySpeed: 3000,
         cssEase: 'linear'
-    };
+    }
+    
     return (
         <div className="slider">
             <div className="container buttons d-flex">
@@ -31,12 +32,25 @@ export default function Carousel() {
                 </div>
             </div>
             <Slider {...settings} >
-                <div className="imagen">
+                <div className="imagen uno">
                     <div className="filtro">
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col">
                                     <h1>Web & Mobile <span>Development</span></h1>
+                                    <p className="mt-2">Applications for all devices and user experience</p>
+                                    <button className="btn transparent white mt-5">Contact Us</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="imagen dos">
+                    <div className="filtro">
+                        <div className="container">
+                            <div className="row align-items-center">
+                                <div className="col">
+                                    <h1>User Experience <span>Design</span></h1>
                                     <p className="mt-2">Applications for all devices and user experience</p>
                                     <button className="btn transparent white mt-5">Contact Us</button>
                                 </div>

@@ -19,11 +19,17 @@
                 color: $primary
     .imagen
         height: calc(100vh - 150px)
-        background-image: url('../img/hero.jpg')
-        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        &:focus
+            outline: none;
+        &.uno
+            background-image: url('../img/hero.jpg')
+            background-position: center;
+        &.dos
+            background-image: url('../img/hero3.jpg')
+            background-position: center right
         .filtro 
             position: absolute;
             height: 100%;

@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
 import './sass/line-awesome.min.css'
 import './sass/index.sass'
-import Router from './Router'
+import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-ReactDOM.render(<Router />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
