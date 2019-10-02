@@ -49,7 +49,7 @@ export default function Carousel() {
                     <div className="filtro">
                         <div className="container">
                             <div className="row align-items-center">
-                                <div className="col">
+                                <div className="col align-self-center text-center">
                                     <h1>Interfaces Design</h1>
                                     <p className="mt-2">Applications for all devices and user experience</p>
                                     <button className="btn transparent white mt-5">Contact Us</button>
