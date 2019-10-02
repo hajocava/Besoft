@@ -1,0 +1,56 @@
+@import 'variables.sass'
+@import 'mixins.sass'
+@import './partials/head.sass'
+
+@font-face 
+  font-family: "Poppins-SemiBold"
+  src: url("../fonts/Poppins-SemiBold.ttf")
+@font-face 
+  font-family: "Poppins-Regular"
+  src: url("../fonts/Poppins-Regular.ttf")
+@font-face 
+  font-family: "Poppins-Medium"
+  src: url("../fonts/Poppins-Medium.ttf")
+@font-face 
+  font-family: "BeVietnam-Bold"
+  src: url("../fonts/BeVietnam-Bold.ttf")
+
+
+html 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100vh
+
+
+*, *:after, *:before 
+  box-sizing: inherit
+
+
+h1, h2
+  font-size: 32px
+  font-family: 'Poppins-SemiBold', sans-serif;
+  @include medium
+    font-size: 40px
+
+h3
+  font-size: 20px
+  font-family: 'Poppins-Medium', sans-serif;
+
+
+body 
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100vh
+  font-family: 'Poppins-Regular', sans-serif;
+  font-size: 15px
+
+.logo
+  font-family: "BeVietnam-Bold"
+  color: $primary
+  transform: translateY(-5px)
+  font-size: 20px
+  @include medium
+    font-size: 30px

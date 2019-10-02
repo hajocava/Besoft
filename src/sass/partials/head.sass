@@ -1,0 +1,50 @@
+nav
+    background-color: $claro
+    position: absolute
+    top: 0
+    width: 100%
+    ul
+        height: 70px
+        margin: 0
+        padding: 0
+        li
+            list-style: none
+            cursor: pointer
+    .movil
+        height: 70px
+        .icono-menu
+            cursor: pointer 
+            padding: .8rem .5rem
+            &:focus
+                outline: none;
+            &:hover
+                span:nth-child(2)
+                    width: 30px
+            &.active
+                span
+                    width: 25px
+                    transform: translateY(3px) rotate(45deg);
+                    &:nth-child(2)
+                        transform: translateY(-6px) rotate(-45deg);
+                        width: 25px
+            span
+                height: 3px
+                width: 30px
+                background-color: $primary
+                transition: all .15s ease-in-out
+                margin-bottom: .4rem
+                &:nth-child(2)
+                    width: 20px
+                    margin: 0
+    .slide
+        position: absolute
+        top: 70px
+        right: 0
+        width: 50%
+        height: calc(100vh - 70px)
+        background-color: $claro
+        ul
+            transform: translateY(-70px)
+            li
+                &:not(:last-child)
+                    margin-bottom: 1.5rem
