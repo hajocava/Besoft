@@ -2,6 +2,7 @@
 @import 'mixins.sass'
 @import './partials/head.sass'
 @import './partials/slider.sass'
+@import './partials/workflow.sass'
 
 @font-face 
   font-family: "Poppins-SemiBold"
@@ -33,13 +34,29 @@ h1,h2,h3,h4,h5,h6,p
 
 h1, h2
   font-size: 32px
-  font-family: 'Poppins-SemiBold', sans-serif;
+  font-family: 'Poppins-SemiBold', sans-serif
   @include medium
     font-size: 40px
 
+.title
+  h4
+    color: $gris5
+    text-transform: uppercase
+  h2
+    color: $oscuro
+
+.separator:after 
+  height: 1px
+  width: 100%
+  background-color: $gris5
+  content: ''
+  display: block
+  margin: .3rem auto 50px auto
+    
+
 h3
   font-size: 20px
-  font-family: 'Poppins-Medium', sans-serif;
+  font-family: 'Poppins-Medium', sans-serif
 
 
 body 
@@ -47,8 +64,11 @@ body
   padding: 0
   width: 100%
   height: 100vh
-  font-family: 'Poppins-Regular', sans-serif;
+  font-family: 'Poppins-Regular', sans-serif
   font-size: 15px
+
+.section
+  margin-top: 80px
 
 .logo
   font-family: "BeVietnam-Bold"
@@ -77,3 +97,6 @@ body
 
 .text-right
   text-align: right
+
+.bg-primary
+  background-color: $primary
