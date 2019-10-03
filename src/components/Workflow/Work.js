@@ -10,7 +10,7 @@ export default function Work() {
             <div className="container">
                 <div className="title">
                     <h4>Work Process</h4>
-                    <h2 className="separator">Our Workflow</h2>
+                    <h2>Our Workflow</h2>
                 </div>
                 <div className="content">
                     <div className="cards">
