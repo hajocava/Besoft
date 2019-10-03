@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap-grid.min.css'
-import 'simplebar/dist/simplebar.min.css'
 import './css/line-awesome.min.css'
 import './css/slick.min.css'
 import './sass/index.sass'

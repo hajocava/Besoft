@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
+import anime from 'animejs'
 
 
 export default function Nav() {
+
     const initialState = {
         menuMovil: false,
         visible: true,
@@ -24,9 +26,19 @@ export default function Nav() {
             })
         }
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        anime.timeline().add({
+            targets: ['li'],
+            translateX: [-20, 0],
+            opacity: [0, 1],
+            duration: 500,
+            easing: "easeOutSine",
+            delay: anime.stagger(100)
+        })
+
+
+        window.addEventListener('scroll', handleScroll)
+        return () => window.removeEventListener('scroll', handleScroll)
+    },[])
 
     return (
         <nav className={visible ? `${prevScroll === 0 ? '' : 'shadow'}` : 'hidden'}>
