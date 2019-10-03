@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import scrollPos from './getScrollPos'
 
 
 export default function Nav() {
     const [state, setState] = useState(false)
     const showMenu = () => setState(!state)
 
+
     return (
-        <nav>
+        <nav className={scrollPos() > 0 ? 'shadow' : ''}>
             <div className="container">
                 <ul className="d-none d-md-flex justify-content-between align-items-center">
                     <li>Services</li>

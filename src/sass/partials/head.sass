@@ -5,12 +5,15 @@ nav
     background-color: $gris1
     position: fixed
     top: 0
+    transition: top 0.6s;
     width: 100%
     z-index: 1000
-    .shadow
+    &.shadow
         -webkit-box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
         -moz-box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
         box-shadow: 0px 2px 9px -7px rgba(0,0,0,0.83);
+    &.hidden
+        top: -70px
     ul
         height: 70px
         margin: 0

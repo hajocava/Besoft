@@ -3,13 +3,9 @@ import Slider from 'react-slick'
 
 export default class Carousel extends Component {
 
-    state = {
-        slideIndex: 0
-    }
+    state = { slideIndex: 0 }
 
     render() {
-
-
         const settings = {
             dots: false,
             infinite: true,
