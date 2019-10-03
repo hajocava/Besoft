@@ -1,14 +1,35 @@
 import React, { useState, useEffect } from 'react'
-import scrollPos from './getScrollPos'
 
 
 export default function Nav() {
-    const [state, setState] = useState(false)
-    const showMenu = () => setState(!state)
+    const initialState = {
+        menuMovil: false,
+        visible: true,
+        prevScroll: window.pageYOffset
+    }
 
+    const [state, setState] = useState(initialState)
+    const { menuMovil, visible, prevScroll } = state
+
+    const showMenuMovil = () => setState({ ...state, menuMovil: !menuMovil })
+
+    useEffect(() => {
+        function handleScroll() {
+            setState(state => {
+                return {
+                    ...state,
+                    prevScroll: window.pageYOffset,
+                    visible: state.prevScroll > window.pageYOffset
+                }
+            })
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <nav className={scrollPos() > 0 ? 'shadow' : ''}>
+        <nav className={visible ? `${prevScroll === 0 ? '' : 'shadow'}` : 'hidden'}>
             <div className="container">
                 <ul className="d-none d-md-flex justify-content-between align-items-center">
                     <li>Services</li>
@@ -21,12 +42,12 @@ export default function Nav() {
                     <div className="logo d-md-none">
                         Besoft
                     </div>
-                    <div onClick={showMenu} className={`icono-menu d-md-none d-flex flex-column ${state ? 'active' : ''}`}>
+                    <div onClick={showMenuMovil} className={`icono-menu d-md-none d-flex flex-column ${menuMovil ? 'active' : ''}`}>
                         <span className="d-block"></span>
                         <span className="d-block align-self-end"></span>
                     </div>
                 </div>
-                <div className={`slide d-none d-md-none ${state ? 'active d-flex align-items-center justify-content-end' : ''}`}>
+                <div className={`slide d-none d-md-none ${menuMovil ? 'active d-flex align-items-center justify-content-end' : ''}`}>
                     <ul className="d-flex flex-column align-items-end mr-4">
                         <li>Services</li>
                         <li>About</li>
