@@ -17,13 +17,16 @@ export default function Nav() {
 
     useEffect(() => {
         function handleScroll() {
-            setState(state => {
-                return {
-                    ...state,
-                    prevScroll: window.pageYOffset,
-                    visible: state.prevScroll > window.pageYOffset
-                }
-            })
+            const currentScrollPos = window.pageYOffset
+
+            if(currentScrollPos > 50)
+                setState(state => {
+                    return {
+                        ...state,
+                        prevScroll: currentScrollPos,
+                        visible: state.prevScroll > window.pageYOffset
+                    }
+                })
         }
 
         anime.timeline().add({

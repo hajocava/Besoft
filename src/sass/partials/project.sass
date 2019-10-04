@@ -1,0 +1,60 @@
+
+.project
+    .nav-step
+        .bar
+            margin: 0 auto
+            width: 288px
+            @include medium
+                width: 403px
+        .progress-bar
+            display: flex
+            span.line
+                height: 20px
+                width: 100%
+                content: ''
+                background-color: $gris2
+                &.check
+                    background-color: $primary
+
+    .options
+        margin: 0 auto
+        width: 288px
+        @include medium
+            width: 403px
+        @include large
+            width: 956px
+        .card-button
+            font-family: 'Poppins-Medium'
+            height: 140px
+            border: none
+            background-color: $white
+            margin-bottom: 8px
+            padding: .0 .6rem
+            color: $oscuro
+
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+
+            width: 140px
+            @include medium
+                width: 195.89px
+                height: 195.89px
+            @include large
+                width: 224px
+                height: 224px
+
+            &:hover
+                cursor: pointer
+                background-color: lighten($primary, 73%)
+                color: $primary
+                @include medium
+                    border: 1px solid $primary
+                    i
+                        color: $primary
+            i
+                display: block
+                font-size: 3rem
+                margin-bottom: .5rem
+                color: $oscuro
+                
