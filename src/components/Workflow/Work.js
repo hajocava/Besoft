@@ -15,7 +15,7 @@ export default function Work() {
                 <div className="content">
                     <div className="cards">
                         <div className="row d-flex">
-                            <div className="order-1 col-6 col-md-4">
+                            <div className="order-1 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
@@ -27,27 +27,27 @@ export default function Work() {
                                     </div>
                                     <h3>Plan</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-2 col-6 col-md-4">
+                            <div className="order-2 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
                                             <i className="la la-pencil-square"></i>
                                         </div>
                                         <div className="icono transparent">
-                                            <i className={`mb-3 ${width < 768 ? 'la la-arrow-down' : 'la la-arrow-right'}`}></i>
+                                            <i className={`mb-3 ${width < 992 ? 'la la-arrow-down' : 'la la-arrow-right'}`}></i>
                                         </div>
                                     </div>
                                     <h3>Design</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-4 order-md-3 col-6 col-md-4">
+                            <div className="order-4 order-lg-3 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
@@ -59,43 +59,43 @@ export default function Work() {
                                     </div>
                                     <h3>Develop</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-6 col-6 col-md-4">
+                            <div className="order-6 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
                                             <i className="la la-bug"></i>
                                         </div>
                                         <div className="icono transparent">
-                                        <i className="mb-3 la la-arrow-left"></i>
+                                            <i className="mb-3 la la-arrow-left"></i>
                                         </div>
                                     </div>
                                     <h3>Test</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-5 col-6 col-md-4">
+                            <div className="order-5 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
                                             <i className="la la-rocket"></i>
                                         </div>
                                         <div className="icono transparent">
-                                        <i className={`mb-3 ${width < 768 ? 'la la-arrow-up' : 'la la-arrow-left'}`}></i>
+                                            <i className={`mb-3 ${width < 992 ? 'la la-arrow-up' : 'la la-arrow-left'}`}></i>
                                         </div>
                                     </div>
                                     <h3>Relese</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="order-3 order-md-4 col-6 col-md-4">
+                            <div className="order-3 order-lg-4 col-6 col-lg-4">
                                 <div className="card">
                                     <div className="d-flex justify-content-between align-items-center">
                                         <div className="icono bg-primary">
@@ -107,7 +107,7 @@ export default function Work() {
                                     </div>
                                     <h3>Feedback</h3>
                                     <div className="card-info">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
                                     </div>
                                 </div>
                             </div>
