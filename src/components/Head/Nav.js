@@ -44,7 +44,7 @@ export default function Nav() {
     },[])
 
     return (
-        <nav className={visible ? `${prevScroll === 0 ? '' : 'shadow'}` : 'hidden'}>
+        <nav className={visible ? `${prevScroll < 90 ? '' : 'shadow'}` : 'hidden'}>
             <div className="container">
                 <ul className="d-none d-md-flex justify-content-between align-items-center">
                     <li>Services</li>

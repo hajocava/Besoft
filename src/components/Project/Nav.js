@@ -13,24 +13,25 @@ export default function Nav({ previousStep, totalSteps, currentStep }) {
         'Excelent!'
     ]
 
+
     return (
         <div className="container nav-step">
             <h2 className="text-center">{texts[currentStep - 1]}</h2>
-            <div className="bar">
-                <div className="progress-bar">
+            <div className="bar mt-4 mb-4">
+                <div className="progress-bar mb-3">
+                    <span className="line check"></span>
                     <span className={check(1)}></span>
                     <span className={check(2)}></span>
                     <span className={check(3)}></span>
                     <span className={check(4)}></span>
-                    <span className={check(5)}></span>
                 </div>
-                <div className="current-step">
+                <div className="current-step mt-2 d-flex justify-content-center align-items-center">
                     {currentStep !== totalSteps ?
                         <Fragment>
                             <button style={{ opacity: currentStep === 1 ? '0' : '1' }} onClick={previousStep}>
-                                Back
+                                <i className="la la-angle-double-left"></i>
                             </button>
-                            <p>Paso {currentStep} de {totalSteps - 1}</p>
+                            <p>{currentStep} de {totalSteps - 1}</p>
                         </Fragment>
                         : <p>Apenas es el comienzo</p>}
                 </div>

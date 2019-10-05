@@ -8,6 +8,7 @@
                 width: 403px
         .progress-bar
             display: flex
+            transition: all .2s ease
             span.line
                 height: 20px
                 width: 100%
@@ -15,6 +16,24 @@
                 background-color: $gris2
                 &.check
                     background-color: $primary
+        .current-step
+            position: relative
+            width: 100%
+            margin: 0 auto
+            margin-top: 1.5rem
+            button
+                background-color: transparent;
+                position: absolute
+                cursor: pointer
+                border: none
+                left: 60px
+                &:focus
+                    outline: none
+                i
+                    font-size: 1.5rem
+                    color: $primary
+            p
+                margin: 0
 
     .options
         margin: 0 auto
@@ -23,6 +42,7 @@
             width: 403px
         @include large
             width: 956px
+            justify-content: unset;
         .card-button
             font-family: 'Poppins-Medium'
             height: 140px
@@ -41,14 +61,16 @@
                 width: 195.89px
                 height: 195.89px
             @include large
-                width: 224px
+                width: 100%
                 height: 224px
+                &:not(:last-child)
+                    margin-right: 1.5rem
 
             &:hover
                 cursor: pointer
-                background-color: lighten($primary, 73%)
-                color: $primary
                 @include medium
+                    color: $primary
+                    background-color: lighten($primary, 73%)
                     border: 1px solid $primary
                     i
                         color: $primary
