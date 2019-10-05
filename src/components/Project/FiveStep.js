@@ -46,7 +46,7 @@ export default function FiveStep({ nextStep, data }) {
     return (
         <div className="cards-container">
             <form className="form-build" onSubmit={sendData}>
-                <div className="row justify-content-md-center">
+                <div className="row justify-content-center">
                     <div className="col-12 col-md-6">
                         <div className="input-field">
                             <input type="text" required ref={firstNameRef} placeholder="First Name" />
