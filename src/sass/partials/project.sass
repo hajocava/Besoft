@@ -35,48 +35,56 @@
             p
                 margin: 0
 
-    .options
+    .cards-container
         margin: 0 auto
         width: 288px
         @include medium
             width: 403px
         @include large
             width: 956px
-            justify-content: unset;
-        .card-button
-            font-family: 'Poppins-Medium'
-            height: 140px
-            border: none
-            background-color: $white
-            margin-bottom: 8px
-            padding: .0 .6rem
-            color: $oscuro
-
-            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
-            -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
-            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
-
-            width: 140px
-            @include medium
-                width: 195.89px
-                height: 195.89px
+        .cards
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: space-between
             @include large
-                width: 100%
-                height: 224px
-                &:not(:last-child)
-                    margin-right: 1.5rem
-
-            &:hover
-                cursor: pointer
-                @include medium
-                    color: $primary
-                    background-color: lighten($primary, 73%)
-                    border: 1px solid $primary
-                    i
-                        color: $primary
-            i
-                display: block
-                font-size: 3rem
-                margin-bottom: .5rem
+                flex-wrap: nowrap
+                justify-content: center
+            .card-button
+                font-family: 'Poppins-Medium'
+                height: 140px
+                border: none
+                background-color: $white
+                margin-bottom: 8px
+                padding: .0 .6rem
                 color: $oscuro
-                
+
+                -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+                -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+                box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+
+                width: 140px
+                @include medium
+                    width: 195.89px
+                    height: 195.89px
+                @include large
+                    width: 100%
+                    height: 298px
+                    padding: 0 1rem
+                    &:not(:last-child)
+                        margin-right: 1rem
+
+                &:hover
+                    cursor: pointer
+                    @include medium
+                        color: $primary
+                        background-color: lighten($primary, 73%)
+                        border: 1px solid $primary
+                        i
+                            color: $primary
+                i
+                    display: block
+                    font-size: 3rem
+                    margin-bottom: .5rem
+                    color: $oscuro
+                        
