@@ -28,7 +28,7 @@ export default function Nav({ previousStep, totalSteps, currentStep }) {
                 <div className="current-step mt-2 d-flex justify-content-center align-items-center">
                     {currentStep !== totalSteps ?
                         <Fragment>
-                            <button style={{ opacity: currentStep === 1 ? '0' : '1' }} onClick={previousStep}>
+                            <button style={{ display: currentStep === 1 ? 'none' : '' }} onClick={previousStep}>
                                 <i className="la la-angle-double-left"></i>
                             </button>
                             <p>{currentStep} de {totalSteps - 1}</p>

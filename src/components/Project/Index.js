@@ -40,7 +40,7 @@ export default function Build() {
 
     return (
         <div className="project section">
-            <StepWizard nav={<Nav />}>
+            <StepWizard nav={<Nav />} transitions={{}} >
                 <FirstStep sendValue={sendValue} />
                 <SecondStep sendValue={sendValue} />
                 <Three sendValue={sendValue} />

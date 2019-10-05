@@ -5,7 +5,8 @@ export default function Index() {
         <div className="about d-lg-flex">
             <div className="image-background">
                 <div className="filter d-flex justify-content-center align-items-center">
-                    <h2>Engineers, designers, artists</h2>
+                    <h2>Engineers, designers, artists
+                    </h2>
                 </div>
             </div>
             <div className="about-us">
