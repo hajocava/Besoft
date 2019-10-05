@@ -79,7 +79,7 @@
                     cursor: pointer
                     @include medium
                         color: $primary
-                        background-color: lighten($primary, 73%)
+                        background-color: lighten($primary, 46%)
                         border: 1px solid $primary
                         i
                             color: $primary
@@ -88,4 +88,26 @@
                     font-size: 3rem
                     margin-bottom: .5rem
                     color: $oscuro
-                        
+                    @include large
+                        margin-bottom: 1rem
+
+    .form-build
+        .input-field
+            margin-bottom: 1rem
+            @include large
+                margin-bottom: 2rem
+            input, select
+                width: 100%
+                padding: 1.5rem 1.2rem
+                border: 1px solid #dcdcdc
+                font-size: .9rem
+                &:focus
+                    outline: none;
+                &::placeholder
+                    color: #acacac
+                
+        p.error
+            margin: 0
+            margin-bottom: 1.5rem
+            font-size: .8rem
+            color: red

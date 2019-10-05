@@ -39,40 +39,54 @@ export default function FiveStep({ nextStep, data }) {
             updateError(false)
             console.log(info);
             nextStep()
-        } 
+        }
 
     }
 
     return (
-        <div>
+        <div className="cards-container">
             <form className="form-build" onSubmit={sendData}>
-                <div className="input-field">
-                    <input type="text" required ref={firstNameRef} placeholder="First Name" />
-                </div>
-                <div className="input-field">
-                    <input type="text" required ref={lastNameRef} placeholder="Last Name" />
-                </div>
-                <div className="input-field">
-                    <input type="email" required ref={emailRef} placeholder="Email Address" />
-                </div>
-                <div className="input-field">
-                    <input type="text" required ref={companyRef} placeholder="Company" />
-                </div>
-                <div className="input-field">
-                    <input type="text" required ref={jobTitleRef} placeholder="Job Title" />
-                </div>
-                <div className="input-field">
-                    <select ref={countryRef} >
-                        <option value="mexico">Mexico</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="eua">Estados Unidos</option>
-                        <option value="india">India</option>
-                    </select>
-                </div>
+                <div className="row justify-content-md-center">
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <input type="text" required ref={firstNameRef} placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <input type="text" required ref={lastNameRef} placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <input type="email" required ref={emailRef} placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <input type="text" required ref={companyRef} placeholder="Company" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <input type="text" required ref={jobTitleRef} placeholder="Job Title" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="input-field">
+                            <select ref={countryRef} >
+                                <option value="mexico">Mexico</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="eua">Estados Unidos</option>
+                                <option value="india">India</option>
+                            </select>
+                        </div>
+                    </div>
 
-                <div>
-                    {error ? <p className="error" >Completa todos los campos</p> : ''}
-                    <input className="btn transparent" type="submit" value="Lets Build" />
+                    <div className="">
+                        {error ? <p className="error" >Completa todos los campos</p> : ''}
+                        <input className="btn text-bold" type="submit" value="Build with Besoft" />
+                    </div>
                 </div>
             </form>
         </div>

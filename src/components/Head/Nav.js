@@ -49,12 +49,12 @@ export default function Nav() {
                 <ul className="d-none d-md-flex justify-content-between align-items-center">
                     <li>Services</li>
                     <li>About</li>
-                    <li className="logo">Besoft</li>
+                    <li className="logo mb-2">Besoft</li>
                     <li>Projects</li>
                     <li>Contact</li>
                 </ul>
                 <div className="movil d-flex d-md-none justify-content-between align-items-center">
-                    <div className="logo d-md-none">
+                    <div className="logo d-md-none mb-2">
                         Besoft
                     </div>
                     <div onClick={showMenuMovil} className={`icono-menu d-md-none d-flex flex-column ${menuMovil ? 'active' : ''}`}>

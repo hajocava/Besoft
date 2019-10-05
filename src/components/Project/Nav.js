@@ -15,7 +15,7 @@ export default function Nav({ previousStep, totalSteps, currentStep }) {
 
 
     return (
-        <div className="container nav-step">
+        <div className="container nav-step mb-5">
             <h2 className="text-center">{texts[currentStep - 1]}</h2>
             <div className="bar mt-4 mb-4">
                 <div className="progress-bar mb-3">
