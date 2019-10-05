@@ -1,0 +1,35 @@
+.contact
+    .image-morelia
+        background-image: url('../img/Morelia.jpg')
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center
+        height: 400px
+        width: 100%
+        .content
+            position: absolute
+            background-color: $white
+            padding: 2rem 3rem
+            bottom: -160px
+            width: 80%
+            margin: 0 auto
+
+            @include medium
+                width: 500px
+                padding: 3rem 4rem
+                bottom: -130px
+
+
+            -webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            -moz-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+            box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+
+            .info-contact
+                i
+                    color: $primary
+                    font-size: 1.8rem
+                h5
+                    font-size: 1rem
+                p
+                    color: $gris6
