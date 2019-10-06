@@ -30,7 +30,7 @@ export default function Nav() {
         }
 
         anime.timeline().add({
-            targets: ['li'],
+            targets: ['nav li'],
             translateX: [-20, 0],
             opacity: [0, 1],
             duration: 500,

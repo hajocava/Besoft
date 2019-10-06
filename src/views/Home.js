@@ -5,6 +5,7 @@ import Workflow from '../components/Workflow/Work'
 import About from '../components/About/About'
 import Project from '../components/Project/Index'
 import Contact from '../components/Contact/Contact'
+import Footer from '../components/Footer/footer'
 
 const App = () => (
     <Fragment>
@@ -17,6 +18,7 @@ const App = () => (
             <About />
             <Project />
             <Contact />
+            <Footer />
         </main>
     </Fragment>
 )
