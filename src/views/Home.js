@@ -2,10 +2,11 @@ import React, { Fragment } from 'react'
 import Nav from '../components/Head/Nav'
 import Slider from '../components/Head/Slider'
 import Workflow from '../components/Workflow/Work'
-import About from '../components/About/About'
 import Project from '../components/Project/Index'
-import Contact from '../components/Contact/Contact'
-import Footer from '../components/Footer/footer'
+import About from '../components/About'
+import Contact from '../components/Contact'
+import Testimonials from '../components/Testimonials'
+import Footer from '../components/Footer'
 
 const App = () => (
     <Fragment>
@@ -18,6 +19,7 @@ const App = () => (
             <About />
             <Project />
             <Contact />
+            <Testimonials />
             <Footer />
         </main>
     </Fragment>

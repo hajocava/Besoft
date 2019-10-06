@@ -37,12 +37,20 @@ export default function footer() {
                     <div className="col-6 col-md-3 mb-5">
                         <h4>Follow us</h4>
                         <div className="iconos d-flex flex-wrap">
-                            <NavLink to={"#"}><i className="fab fa-facebook-square"></i></NavLink>
-                            <NavLink to={"#"}><i className="fab fa-youtube-square"></i></NavLink>
-                            <NavLink to={"#"}><i className="fab fa-instagram"></i></NavLink>
-                            <NavLink to={"#"}><i className="fab fa-linkedin"></i></NavLink>
-                            <NavLink to={"#"}><i className="fab fa-twitter-square"></i></NavLink>
+                            <NavLink to={"#"}><i className="la la-facebook-square"></i></NavLink>
+                            <NavLink to={"#"}><i className="la la-twitter"></i></NavLink>
+                            <NavLink to={"#"}><i className="la la-youtube-square"></i></NavLink>
+                            <NavLink to={"#"}><i className="la la-instagram"></i></NavLink>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bottom-footer">
+                <div className="container d-flex justify-content-between flex-wrap">
+                    <div className="mb-4 mb-sm-0">© 2019 Besoft. All rights reserved.</div>
+                    <div>
+                        <NavLink className="mr-5" to={"#"}>Privacy Policy</NavLink>
+                        <NavLink to={"#"}>Terms & Conditions</NavLink>
                     </div>
                 </div>
             </div>
