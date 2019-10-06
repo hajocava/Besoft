@@ -8,7 +8,7 @@ export default function footer() {
             <div className="container">
                 <div className="row">
                     <div className="col-12 logo mb-5">Besoft</div>
-                    <div className="col-6 col-md-4 col-lg-3 mb-5">
+                    <div className="col-6 col-md-3 mb-5">
                         <h4>Solutions</h4>
                         <ul>
                             <li><NavLink to={"#"}>Aplicaciones Mobiles</NavLink></li>
@@ -18,7 +18,7 @@ export default function footer() {
                             <li><NavLink to={"#"}>Consultoria</NavLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3 mb-5">
+                    <div className="col-6 col-md-3 mb-5">
                         <h4>Consulting</h4>
                         <ul>
                             <li><NavLink to={"#"}>Sobre nosotros</NavLink></li>
@@ -26,7 +26,7 @@ export default function footer() {
                             <li><NavLink to={"#"}>Noticias</NavLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3 mb-5">
+                    <div className="col-6 col-md-3 mb-5">
                         <h4>About</h4>
                         <ul>
                             <li><NavLink to={"#"}>Portafolio</NavLink></li>
@@ -34,7 +34,7 @@ export default function footer() {
                             <li><NavLink to={"#"}>Contacto</NavLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-md-4 col-lg-3 mb-5">
+                    <div className="col-6 col-md-3 mb-5">
                         <h4>Follow us</h4>
                         <div className="iconos d-flex flex-wrap">
                             <NavLink to={"#"}><i className="fab fa-facebook-square"></i></NavLink>
