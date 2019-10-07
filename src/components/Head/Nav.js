@@ -48,7 +48,7 @@ export default function Nav() {
     const { width } = getWindowDimensions();
 
     return (
-        <nav className={visible ? `${prevScroll < 90 ? '' : 'shadow'}` : 'hidden'}>
+        <nav className={visible || menuMovil ? `${prevScroll < 90 ? '' : 'shadow'}` : 'hidden'}>
             <div className={`logo movil ${menuMovil ? 'active' : ''}`}>Besoft</div>
             <div className={`${width > 767 ? 'container' : ''}`}>
                 <ul className={`nav-links ${menuMovil ? 'open' : ''}`}>
