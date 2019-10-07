@@ -1,11 +1,11 @@
 nav
     background-color: $white
-    position: fixed
     top: 0
     width: 100%
     height: 70px
-    transition: top 0.6s;
-    z-index: 3
+    transition: top 0.6s
+    position: fixed
+    z-index: 2
 
     @include medium
         display: flex
@@ -19,7 +19,7 @@ nav
         transform: translate(-5%, -50%)
         transition: all .2s ease-in-out
         padding-bottom: 5px
-        z-index: 2
+        z-index: 3
         &.active
             color: $white
         @include medium
@@ -27,6 +27,7 @@ nav
             
 
     .nav-links
+        position: fixed
         list-style: none
         background-color: $primary
         height: 100vh
@@ -40,6 +41,7 @@ nav
         transition: all .5s ease-out
         pointer-events: none
         padding: 4rem 0
+        z-index: 2
         a 
             color: $white
 
@@ -76,7 +78,7 @@ nav
         transform: translate(-5%, -50%)
         display: flex
         flex-direction: column
-        z-index: 2
+        z-index: 3
         @include medium
             display: none
         &:focus
