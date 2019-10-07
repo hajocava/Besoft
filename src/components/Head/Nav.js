@@ -17,6 +17,7 @@ export default function Nav() {
 
     const showMenuMovil = () => setState({ ...state, menuMovil: !menuMovil })
 
+
     useEffect(() => {
         function handleScroll() {
             const currentScrollPos = window.pageYOffset
