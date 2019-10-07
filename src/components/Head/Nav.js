@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 import anime from 'animejs'
 import getWindowDimensions from '../Workflow/getWindowDimensions'
 
@@ -49,13 +50,25 @@ export default function Nav() {
     return (
         <nav className={visible ? `${prevScroll < 90 ? '' : 'shadow'}` : 'hidden'}>
             <div className={`logo movil ${menuMovil ? 'active' : ''}`}>Besoft</div>
-            <ul className={`nav-links ${menuMovil ? 'open' : ''} ${width > 767 ? 'container' : ''}`}>
-                <li>Services</li>
-                <li>About</li>
-                <li className="logo mb-2 d-none d-md-inline">Besoft</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
+            <div className={`${width > 767 ? 'container' : ''}`}>
+                <ul className={`nav-links ${menuMovil ? 'open' : ''}`}>
+                    <NavLink to={"#"}>
+                        <li>Services</li>
+                    </NavLink>
+                    <NavLink to={"#"}>
+                        <li>About</li>
+                    </NavLink>
+                    <NavLink className="d-none d-md-inline" to={"#"}>
+                        <li className="logo mb-2">Besoft</li>
+                    </NavLink>
+                    <NavLink to={"#"}>
+                        <li>Projects</li>
+                    </NavLink>
+                    <NavLink to={"#"}>
+                        <li>Contact</li>
+                    </NavLink>
+                </ul>
+            </div>
             <div onClick={showMenuMovil} className={`hamburguer ${menuMovil ? 'active' : ''}`}>
                 <span className="d-block"></span>
                 <span className="d-block align-self-end"></span>

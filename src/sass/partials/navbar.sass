@@ -7,6 +7,11 @@ nav
     transition: top 0.6s;
     z-index: 3
 
+    @include medium
+        display: flex
+        align-items: center
+
+
     .logo.movil
         position: absolute
         left: 5%
@@ -30,22 +35,26 @@ nav
         flex-direction: column
         justify-content: space-around
         align-items: center
-        color: $white
         clip-path: circle(100px at 150% -30%)
         -webkit-clip-path: circle(100px at 150% -30%)
         transition: all .5s ease-out
         pointer-events: none
         padding: 4rem 0
+        a 
+            color: $white
 
         @include medium
             flex-direction: row
             justify-content: space-between
             background-color: transparent
-            color: $gris3
             height: 100%
+            padding: 0
             clip-path: none
             -webkit-clip-path: none
-            padding: 0
+            pointer-events: all
+            a 
+                color: $gris3
+            
 
         &.open
             clip-path: circle(1000px at 90% -10%)
