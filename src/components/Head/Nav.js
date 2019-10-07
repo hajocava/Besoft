@@ -53,21 +53,13 @@ export default function Nav() {
             <div className={`logo movil ${menuMovil ? 'active' : ''}`}>Besoft</div>
             <div className={`${width > 767 ? 'container' : ''}`}>
                 <ul className={`nav-links ${menuMovil ? 'open' : ''}`}>
-                    <NavLink to={"#"}>
-                        <li>Services</li>
-                    </NavLink>
-                    <NavLink to={"#"}>
-                        <li>About</li>
-                    </NavLink>
-                    <NavLink className="d-none d-md-inline" to={"#"}>
-                        <li className="logo mb-2">Besoft</li>
-                    </NavLink>
-                    <NavLink to={"#"}>
-                        <li>Projects</li>
-                    </NavLink>
-                    <NavLink to={"#"}>
-                        <li>Contact</li>
-                    </NavLink>
+                    <li><NavLink to={"#"}>Services</NavLink></li>
+                    <li><NavLink to={"#about"}>About</NavLink></li>
+                    <li className="d-none d-md-inline">
+                        <NavLink className="logo mb-2" to={"#"}>Besoft</NavLink>
+                    </li>
+                    <li><NavLink to={"#"}>Projects</NavLink></li>
+                    <li><NavLink to={"#contact"}>Contact</NavLink></li>
                 </ul>
             </div>
             <div onClick={showMenuMovil} className={`hamburguer ${menuMovil ? 'active' : ''}`}>

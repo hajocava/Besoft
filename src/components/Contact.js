@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
     return (
-        <div className="contact section">
+        <div id="contact" className="contact section">
             <div className="image-morelia">
                 <div className="d-flex justify-content-center align-items-center">
                     <div className="content d-md-flex flex-md-column align-items-center">
