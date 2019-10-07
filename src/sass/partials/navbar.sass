@@ -36,11 +36,10 @@ nav
         flex-direction: column
         justify-content: space-around
         align-items: center
-        transition: all .3s ease-out
+        transition: all .5s ease-out
         pointer-events: none
         padding: 4rem 0
         z-index: 2
-        // right: -100%
         transform: translateX(100%)
         a 
             color: $white
@@ -55,14 +54,13 @@ nav
             clip-path: none
             -webkit-clip-path: none
             pointer-events: all
-            right: 0
+            transform: translateX(0%)
             a 
                 color: $gris3
             
 
         &.open
             pointer-events: all
-            // right: 0
             transform: translateX(0%)
         
     &.shadow
