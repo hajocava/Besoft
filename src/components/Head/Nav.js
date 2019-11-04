@@ -17,6 +17,8 @@ export default function Nav() {
 
     const showMenuMovil = () => setState({ ...state, menuMovil: !menuMovil })
 
+    const hideMenuMovil = () => setState({ ...state, menuMovil: false })
+
 
     useEffect(() => {
         function handleScroll() {
@@ -55,27 +57,27 @@ export default function Nav() {
                 <ul className={`nav-links ${menuMovil ? 'open' : ''}`}>
 
                     <li>
-                        <Link to="services" spy={true} smooth={true} offset={-70} duration={500}>
+                        <Link to="services" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
                             Services
                         </Link>
                     </li>
                     <li>
-                        <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+                        <Link to="about" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
                             About
                         </Link>
                     </li>
                     <li className="d-none d-md-inline">
-                        <Link to="services" className="logo mb-2" spy={true} smooth={true} offset={-70} duration={500}>
+                        <Link to="services" className="logo mb-2" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
                             Besoft
                         </Link>
                     </li>
                     <li>
-                        <Link to="build-form" spy={true} smooth={true} offset={-70} duration={500}>
+                        <Link to="build-form" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
                             Build
                         </Link>
                     </li>
                     <li>
-                        <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+                        <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
                             Contact
                         </Link>
                     </li>
