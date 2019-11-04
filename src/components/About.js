@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Index() {
     return (
-        <div id="about" className="about d-lg-flex">
+        <div id="about" className="section about d-lg-flex">
             <div className="image-background">
                 <div className="filter d-flex justify-content-center align-items-center">
                     <h2>Engineers, designers, artists

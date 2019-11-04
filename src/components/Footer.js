@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll';
 import { NavLink } from 'react-router-dom'
 
 
@@ -34,7 +35,7 @@ export default function footer() {
                             <li><NavLink to={"#"}>Contacto</NavLink></li>
                         </ul>
                     </div>
-                    <div className="col-6 col-md-3 mb-5">
+                    <div className="col-12 col-md-3 mb-5">
                         <h4>Follow us</h4>
                         <div className="iconos d-flex flex-wrap">
                             <NavLink to={"#"}><i className="la la-facebook-square"></i></NavLink>
@@ -42,6 +43,9 @@ export default function footer() {
                             <NavLink to={"#"}><i className="la la-youtube-square"></i></NavLink>
                             <NavLink to={"#"}><i className="la la-instagram"></i></NavLink>
                         </div>
+                        <button className="btn" style={{marginTop: '1rem'}} onClick={() => scroll.scrollToTop()}>
+                            Scroll to top
+                        </button>
                     </div>
                 </div>
             </div>

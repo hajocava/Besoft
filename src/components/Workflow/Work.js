@@ -6,7 +6,7 @@ export default function Work() {
     const { width } = getWindowDimensions();
 
     return (
-        <div className="section workflow">
+        <div id="workflow" className="section workflow">
             <div className="container">
                 <div className="title">
                     <h4>Work Process</h4>
@@ -27,7 +27,7 @@ export default function Work() {
                                     </div>
                                     <h3>Plan</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam.</p>
+                                        <p>Identify the resources needed to carry out the project, as well as development costs and delivery dates.</p>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ export default function Work() {
                                     </div>
                                     <h3>Design</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
+                                        <p>We create a representation of the entity that will be built later, to show a preliminary design.</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ export default function Work() {
                                     </div>
                                     <h3>Develop</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
+                                        <p>We begin to build each stage at the application code level, this stage is closely linked to the previous step.</p>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@ export default function Work() {
                                     </div>
                                     <h3>Test</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
+                                        <p>It consists of verifying that the software correctly performs the tasks indicated in the specification.</p>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ export default function Work() {
                                     </div>
                                     <h3>Relese</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
+                                        <p>A trial version is launched to identify possible errors and improvements in performance and functionality.</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@ export default function Work() {
                                     </div>
                                     <h3>Feedback</h3>
                                     <div className="card-info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, unde ipsa illo natus magni tempora cum quibusdam nesciunt, officiis iste ex.</p>
+                                        <p>We receive feedback from the client and the test users to make improvements to our new iteration.</p>
                                     </div>
                                 </div>
                             </div>

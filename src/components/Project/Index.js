@@ -39,7 +39,7 @@ export default function Build() {
     }
 
     return (
-        <div className="project section">
+        <div id="build-form" className="project section">
             <StepWizard nav={<Nav />} transitions={{}} >
                 <FirstStep sendValue={sendValue} />
                 <SecondStep sendValue={sendValue} />

@@ -26,7 +26,7 @@ export default class Carousel extends Component {
         }
 
         return (
-            <div className="slider-hero">
+            <div id="services" className="slider-hero">
                 <div className="container buttons d-flex">
                     <div className={`button ${this.state.slideIndex === 0 ? 'active' : ''}`} onClick={goToSlide(0)} >
                         <i className="la la-code"></i>

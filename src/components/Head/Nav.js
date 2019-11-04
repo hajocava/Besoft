@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-scroll';
 import anime from 'animejs'
 import getWindowDimensions from '../Workflow/getWindowDimensions'
 
@@ -38,7 +38,7 @@ export default function Nav() {
             opacity: [0, 1],
             duration: 500,
             easing: "easeOutSine",
-            delay: anime.stagger(100)
+            delay: anime.stagger(200)
         })
 
 
@@ -53,13 +53,32 @@ export default function Nav() {
             <div className={`logo movil ${menuMovil ? 'active' : ''}`}>Besoft</div>
             <div className={`${width > 767 ? 'container' : ''}`}>
                 <ul className={`nav-links ${menuMovil ? 'open' : ''}`}>
-                    <li><NavLink to={"#"}>Services</NavLink></li>
-                    <li><NavLink to={"#about"}>About</NavLink></li>
-                    <li className="d-none d-md-inline">
-                        <NavLink className="logo mb-2" to={"#"}>Besoft</NavLink>
+
+                    <li>
+                        <Link to="services" spy={true} smooth={true} offset={-70} duration={500}>
+                            Services
+                        </Link>
                     </li>
-                    <li><NavLink to={"#"}>Projects</NavLink></li>
-                    <li><NavLink to={"#contact"}>Contact</NavLink></li>
+                    <li>
+                        <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+                            About
+                        </Link>
+                    </li>
+                    <li className="d-none d-md-inline">
+                        <Link to="services" className="logo mb-2" spy={true} smooth={true} offset={-70} duration={500}>
+                            Besoft
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="build-form" spy={true} smooth={true} offset={-70} duration={500}>
+                            Build
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div onClick={showMenuMovil} className={`hamburguer ${menuMovil ? 'active' : ''}`}>

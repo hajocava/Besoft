@@ -14,7 +14,7 @@ export default class Testimonials extends Component {
         }
 
         return (
-            <div className="testimonials">
+            <div id="testimonials" className="testimonials">
                 <div className="container d-md-flex justify-content-md-between align-items-center mb-md-5">
                     <h2>Our customers say</h2>
                     <div className="buttons">
