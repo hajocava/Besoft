@@ -58,7 +58,7 @@ export default function Nav() {
 
                     <li>
                         <Link to="services" spy={true} smooth={true} offset={-70} duration={500} onClick={hideMenuMovil}>
-                            Services
+                            Productos
                         </Link>
                     </li>
                     <li>
